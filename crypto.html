@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hilton headhunters - HHS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-kz+5YiSSXF9VOXV54YrhIBmPqOS2gdsXOsSZhii+EoZld7Ugc5BlLYSBLgmrp9SHY4Gv4iZCxNqGxFe9LBc5Qg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <h1>HHS.</h1>
+        </div>
+        <div class="navbar-icons">
+            <i class="fas fa-user-circle" onclick="window.location.href='wallet.html'"><img src="/images/application-wallet-pass.png" alt=""></i> <!-- Replace this with your login icon -->
+<!-- Update the login icon with a link to log.html -->
+<i class="fas fa-sign-in-alt" onclick="window.location.href='admin.html'"><img src="/images/utilisateur.png" alt=""></i>
+
+<i class="fas fa-sign-in-alt" id="logoutButton" style="cursor: pointer;"><img src="/images/se-deconnecter.png" alt="" onclick="logout()"></i>
+
+
+
+ <!-- Replace this with your signup icon -->
+        </div>
+    </nav>
+    <h2>"DREAM COME TO REALITY"</h2>
+    <div id="app">
+       
+        <div id="crypto-list"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

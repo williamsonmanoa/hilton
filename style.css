@@ -1,0 +1,117 @@
+/* Add these styles to your existing CSS file */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+#app {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #3a14a3;
+    font-size: 20px;
+    margin-left: 20px;
+    font-style: italic;
+
+}
+
+#crypto-list {
+    margin-top: 20px;
+}
+
+.crypto-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.crypto-item:hover {
+    background-color: #eaeaea;
+}
+
+.crypto-info {
+    display: flex;
+    align-items: center;
+}
+
+.crypto-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.crypto-values {
+    text-align: right;
+}
+
+.crypto-values p {
+    margin: 0;
+}
+
+.up, .down {
+    font-weight: bold;
+}
+
+.up {
+    color: #00cc00;
+}
+
+.down {
+    color: #ff3333;
+}
+
+/* Add these styles to your existing CSS file */
+
+.navbar {
+    background-color: #1a0781;
+    padding: 5px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-icons i {
+    font-size: 1.5em;
+    margin-right: 10px;
+    cursor: pointer;
+    color:  #ffffff;
+}
+
+.navbar-icons i:hover {
+    color: #00cc00; /* Change color on hover */
+}
+
+

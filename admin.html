@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="admin-container">
+        <h2>Admin Panel</h2>
+        <form id="admin-login-form">
+            <label for="admin-username">Username:</label>
+            <input type="text" id="admin-username" name="admin-username" required>
+
+            <label for="admin-password">Password:</label>
+            <input type="password" id="admin-password" name="admin-password" required>
+
+            <button type="button" id="login-button">Login</button>
+        </form>
+
+        <div id="admin-content" style="display: none;">
+            <div>
+                <label for="client-list">Select Client:</label>
+                <select id="client-list"></select>
+            </div>
+            <form id="admin-form">
+                <label for="amount">Amount to Add/Modify:</label>
+                <input type="number" id="amount" name="amount" required>
+
+                <button type="button" onclick="addAmount()">Add/Modify Wallet</button><br>
+                <button type="button" onclick="removeAmount()">Remove Wallet</button><br>
+                <button type="button" onclick="goToCryptoPage()">Home</button>
+
+            </form>
+        </div>
+    </div>
+
+    <style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.admin-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+label {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+select, input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+    </style>
+
+    <script src="admin.js"></script>
+</body>
+</html>
