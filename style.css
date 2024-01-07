@@ -84,10 +84,13 @@ h2 {
 }
 
 /* Add these styles to your existing CSS file */
+/* ... (your existing styles) ... */
+
+/* Add these styles to your existing CSS file */
 
 .navbar {
     background-color: #1a0781;
-    padding: 5px;
+    padding: 10px; /* Increased padding for better spacing */
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -95,7 +98,7 @@ h2 {
 }
 
 .navbar-brand {
-    font-size: 1.5em;
+    font-size: 1.8em; /* Increased font size for the brand */
 }
 
 .navbar-icons {
@@ -103,15 +106,28 @@ h2 {
     align-items: center;
 }
 
+.navbar-icons button {
+    background-color: #041425;
+    color: #fff;
+    padding: 2px;
+    border: none;
+    border-radius: 0px;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Added margin for spacing between buttons */
+}
+
+.navbar-icons button:hover {
+    background-color: #7a7a7a;
+}
+
 .navbar-icons i {
     font-size: 1.5em;
-    margin-right: 10px;
+    margin-right: 5px; /* Adjusted margin for spacing between icon and text */
     cursor: pointer;
-    color:  #ffffff;
 }
 
-.navbar-icons i:hover {
-    color: #00cc00; /* Change color on hover */
-}
-
-
+/* ... (rest of your existing styles) ... */

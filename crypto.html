@@ -13,11 +13,26 @@
             <h1>HHS.</h1>
         </div>
         <div class="navbar-icons">
-            <i class="fas fa-user-circle" onclick="window.location.href='wallet.html'"><img src="/images/application-wallet-pass.png" alt=""></i> <!-- Replace this with your login icon -->
-<!-- Update the login icon with a link to log.html -->
-<i class="fas fa-sign-in-alt" onclick="window.location.href='admin.html'"><img src="/images/utilisateur.png" alt=""></i>
+<!-- Replace this with your wallet button -->
+<button type="button" onclick="window.location.href='wallet.html'">WALLET
+    <i class="fas fa-user-circle"></i>
+    <!-- If you want to include an image -->
+    <!-- <img src="/images/application-wallet-pass.png" alt="Wallet"> -->
+</button>
 
-<i class="fas fa-sign-in-alt" id="logoutButton" style="cursor: pointer;"><img src="/images/se-deconnecter.png" alt="" onclick="logout()"></i>
+<!-- Replace this with your login button -->
+<button type="button" onclick="window.location.href='admin.html'">ADMIN
+    <i class="fas fa-sign-in-alt"></i>
+    <!-- If you want to include an image -->
+    <!-- <img src="/images/utilisateur.png" alt="Login"> -->
+</button>
+
+<!-- Logout button -->
+<button type="button" id="logoutButton" onclick="logout()">LOGOUT
+    <i class="fas fa-sign-in-alt"></i>
+    <!-- If you want to include an image -->
+    <!-- <img src="/images/se-deconnecter.png" alt="Logout"> -->
+</button>
 
 
 
